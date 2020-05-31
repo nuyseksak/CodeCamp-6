@@ -177,15 +177,48 @@
     </pre>
     <P><b>Pseudo-elements Selectors</b></P>
     <p>กำหนดเฉพาะบางส่วนของ element</p>
-    <p>::first-line กำหนดเฉพาะบันทัดแรกของ element</p>
+    
+    <ul>
+        <li><b>::after</b> เพิ่มข้อความหลังแท็ก</li>
+        <li><b>::before</b> เพิ่มข้อความก่อนแท็ก</li>
+        <li><b>::first-letter</b> เลือกตัวแรกของแท็ก</li>
+        <li><b>::first-line</b> เลือกแถวแรกของแท็ก</li>
+        <li><b>::selection</b> ครอบตัวหนังสือ</li>
+    </ul>
+    <p>กำหนด element ตามด้วยเครื่องหมาย :: Pseudo-elements</p>
     <pre >
         p::first-line {
             color: #ff0000;
             font-variant: small-caps;
           }
     </pre>
+    <p><b>Pseudo-class Selectors</b></p>
+    <p>เลือก element เฉพาะบาง attribute</p>
+    <ul>
+        <li><b>:active</b> เลือกเฉพาะลิงค์ที่ทำงาน</li>
+        <li><b>:checked</b> เลือกเฉพาะช่องที่ถูกเช็ค</li>
+        <li><b>:disabled</b> เลือกเฉพาะช่องที่ไม่ทำงาน</li>
+        <li><b>:focus</b> เลือก input element ที่ถูกคลิก</li>
+        <li><b>:hover</b> เลือกเฉพาะบล็อกที่เมาส์เลื่อนโดน</li>
+        <li><b>:link</b> เลือกทุกลิงค์ที่มี</li>
+        <li><b>:required</b> เลือกเฉพาะช่องที่มี required</li>
+        <li><b>:target</b> เลือกเฉพาะ target link</li>
+    </ul>
+    <p>กำหนด element ตามด้วยเครื่่องหมาย : Pseudo-class</p>
+    <pre>
+        selector:pseudo-class {
+            property:value;
+          }
+    </pre>
     <P><b>Combinator Selectors</b></P>
     <p>การกำหนดเหงื่อนไขระหว่าง 2 selector</p>
+    
+    <ul>
+        <li><b>Descendant selector (space)</b></li>
+        <li><b>Child selector (>)</b></li>
+        <li><b>Adjacent sibling selector (+)</b></li>
+        <li><b>General sibling selector (~)</b></li>
+    </ul>
     <p>ตามตัวอย่างจะเลือก tag &lt;p&gt; ทั้งหมดที่อยู่ใน &lt;div&gt; </p>
     <pre >
         div p {
