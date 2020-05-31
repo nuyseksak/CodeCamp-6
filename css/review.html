@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Review CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        pre
+        {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <ul>
+        <li>
+            <h3>CSS Syntax ประกอบด้วยอะไรบ้าง ?</h3>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <th>No.</th>
+            <th>Syntax</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1</td>
+                <td>Selector {Property:Value;Property:Value;}</td>
+                <!-- <td>h1 {color:red;font-size:30px;}</td> -->
+            </tr>
+        </tbody>
+    </table>
+    <p><b>CSS Syntax</b></p>
+    <p>CSS Syntax ประกอบไปด้วย selector และ Declaration Block</p>
+    <img src="https://www.w3schools.com/Css/selector.gif">
+    <p>Selector คือ html element ที่ต้องการที่จะใส่ style</p>
+    <p>Declaration block คือ การบอกลักษณะ style ในแต่ละ declaration block จะถูกขั้นด้วยเครื่องหมาย(semicolons) ; </p>
+    <P>ในแต่ละ declaration block จะประกอบไปด้วย property และ value จะถูกกขั้นด้วย(colon) :</P>
+    <p>Property คือ คุณสมบัติ</p>
+    <p>Value คือ คือค่าที่ระบุ</p>
+    <hr>
+    <ul>
+        <li>
+            <h3>การเขียน CSS มีกี่แบบอะไรบ้าง?</h3>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <th>No.</th>
+            <th>How to</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1</td>
+                <td><b>Inline CSS</b> เขียนภายใน tag html</td>
+
+            </tr>
+            <tr>
+                <td style="text-align: center;">2</td>
+                <td><b>External CSS</b> จำเข้าไฟล์ CSS จากภายนอก</td>
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center;">3</td>
+                <td><b>Internal CSS</b> การเขียนภายใน Eelement HTML</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <p><b>Inline CSS</b></p>
+    <p>Inline CSS จะใช้ได้เฉพาะ element นั้น element เดียว</p>
+    <p>กำหนด css ได้ที่ attribute style ใน element</p>
+    <pre >
+        &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+    </pre>
+    <p><b>External CSS</b></p>
+    <p>External CSS นำเข้าไฟล์จากภายนอกเข้ามาใน html page</p>
+    <p>โดยนำเข้าได้จาก &lt;link&gt; element อยู่ถายใน &lt;head&gt;</p>
+    <pre >
+        &lt;head&gt;
+            &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+        &lt;/head&gt;
+    </pre>
+    <p><b>Internal CSS</b></p>
+    <p>Internal CSS จะใช้ได้เฉพาะ html page นั้น page เดียว</p>
+    <p>กำหนด css ได้ที่ &lt;style&gt; element อยู่ถายใน &lt;head&gt;</p>
+    <pre >
+        &lt;head&gt;
+            &lt;style&gt;
+                h1 {
+                    color: maroon;
+                    margin-left: 40px;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+    </pre>
+    <hr>
+    <ul>
+        <li>
+            <h3>Selector มีกี่แบบอะไรบ้าง?</h3>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <th>No.</th>
+            <th>Selector</th>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1</td>
+                <td><b>ID Selectors</b></td>
+                
+            </tr>
+            <tr>
+                <td style="text-align: center;">2</td>
+                <td><b>Class Selectors</b></td>
+                
+            </tr>
+            <tr>
+                <td style="text-align: center;">3</td>
+                <td><b>Pseudo-elements Selectors</b> </td>
+
+            </tr>
+            <tr>
+                <td style="text-align: center;">4</td>
+                <td><b>Pseudo-class Selectors</b> </td>
+   
+            </tr>
+            <tr>
+                <td style="text-align: center;">5</td>
+                <td><b>Combinator Selectors</b> </td>
+
+            </tr>
+            <tr>
+                <td style="text-align: center;">6</td>
+                <td><b>Attribute Selectors</b> </td>
+
+            </tr>
+        </tbody>
+    </table>
+    <P><b>ID Selectors</b></P>
+    <p>คือการเลือก html element โดยระบุ id</p>
+    <p>การกำหนดชื่อของ element id โดยจะมีได้แค่ element เดียวเท่านนั้นในหนึ่ง html page</p>
+    <p>การเลือก html element โดยระบุ id ต้องนำหน้าด้วยเครื่องหมาย hash (#) ตามด้วยชื่อ id</p>
+    <pre >
+        #elementid {
+            text-align: center;
+            color: red;
+          }
+    </pre>
+    <P><b>Class Selectors</b></P>
+    <p>คือการเลือก html element โดยระบุ class ใน attribute class ของ element</p>
+    <p> การกำหนดชื่อของ elemnet โดยสามารถมีได้หลาย element</p>
+    <p>การเลือก html element โดยระบุ class ต้องนำหน้าด้วยเครื่องหมาย period (.) ตามด้วยชื่อ class</p>
+    <pre >
+        .classname{
+            text-align: center;
+            color: red;
+          }
+    </pre>
+    <P><b>Pseudo-elements Selectors</b></P>
+    <p>กำหนดเฉพาะบางส่วนของ element</p>
+    <p>::first-line กำหนดเฉพาะบันทัดแรกของ element</p>
+    <pre >
+        p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+          }
+    </pre>
+    <P><b>Combinator Selectors</b></P>
+    <p>การกำหนดเหงื่อนไขระหว่าง 2 selector</p>
+    <p>ตามตัวอย่างจะเลือก tag &lt;p&gt; ทั้งหมดที่อยู่ใน &lt;div&gt; </p>
+    <pre >
+        div p {
+            background-color: yellow;
+          }
+    </pre>
+    <P><b>Attribute Selectors</b></P>
+    <p>การกำหนดเลือก attribute ใน element</p>
+    <p>ตามตัวอย่าง จะเลือกเฉพาะ element ที่มี attribute target="_blank"</p>
+    <pre >
+        a[target="_blank"] {
+            background-color: yellow;
+          }
+    </pre>
+    <hr>
+    <ul>
+        <li>
+            <h3>Combinator มีกี่แบบอะไรบ้าง</h3>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <th>No.</th>
+            <th>Combinator Selectors</th>
+
+        </thead>
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td><b>Descendant selector (space)</b> </td>
+
+        </tr>
+        <tr>
+            <td style="text-align: center;">2</td>
+            <td><b>Child selector (>)</b></td>
+
+        </tr>
+        <tr>
+            <td style="text-align: center;">3</td>
+            <td><b>Adjacent sibling selector (+)</b></td>
+
+        </tr>
+        <tr>
+            <td style="text-align: center;">4</td>
+            <td><b>General sibling selector (~)</b></td>
+
+        </tr>
+    </table>
+    <p><b>Descendant selector (space)</b></p>
+    <p>การเลือก element ทั้งหมดที่อยู่ภายใน base element </p>
+    <p>ตามตัวอย่างจะเลือก tag &lt;p&gt; ทั้งหมดที่อยู่ใน &lt;div&gt; </p>
+    <pre >
+        div p {
+            background-color: yellow;
+        }
+      </pre>
+
+    <p><b>Child selector (>)</b></p>
+    <p>การเลือก element ทั้งหมดที่เป็นลูกของ base element </p>
+    <p>ตามตัวอย่างจะเลือก tag &lt;p&gt; ทั้งหมดที่เป็นลูกของ &lt;div&gt; ทั้งหมด</p>
+    <pre >
+        div > p {
+            background-color: yellow;
+          }
+    </pre>
+
+    <p><b>adjacent sibling selector (+)</b></p>
+    <p>การเลือก element ที่อยู่ถัดจาก base element </p>
+    <p>ตามตัวอย่างจะเลือก tag &lt;p&gt; ที่อยู่ถัดจาก &lt;div&gt; </p>
+    <pre >
+        div + p {
+            background-color: yellow;
+          }
+    </pre>
+
+    <p><b>general sibling selector (~)</b></p>
+    <p>การเลือก element ทั้งหมดที่อยู่ถัดจาก base element </p>
+    <p>ตามตัวอย่างจะเลือก tag &lt;p&gt; ทั้งหมดที่อยู่ถัดจาก &lt;div&gt; </p>
+    <pre >
+        div ~ p {
+            background-color: yellow;
+          }
+    </pre>
+
+</body>
+
+</html>
