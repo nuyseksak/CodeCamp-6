@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
     <style>
-    h1{
-        text-align: center;
-        margin-top: 50px;
-        font-size: 50px;
-    }
+
+
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 50px;
+        }
+
+        img{
+            border-radius: 5% 0% 0% 5%;
+            width: 360px;
+            height: 360px;
+            margin: 0px;
+            
+        }
+
+        section {
+            float: left;
+            background:whitesmoke;
+            width: 360px;
+            height: 360px;
+        }
+
+        .left{
+            margin: 0px;
+           border-radius: 5% 0% 0% 5%
+        }
+        .right{
+            padding-left: 10px;
+            width: 360px;
+            height: 360px;
+            border-radius: 0% 5% 5% 0%
+        }
     </style>
 </head>
-<body >
+
+<body>
     <div class="container">
-        <h1>ฉันชื่อ "หนุ่ย"</h1>
-        <h2><a href="profile.html">ข้อมูลส่วนต้ว</a></h2><h2><a>เพื่อนๆของฉัน</a></h2>
+        <section class="left">
+            <img src="/HTML/img/profile1.jpg">
+        </section>
+
+        <section class="right">
+            <h2>ฉันชื่อ "หนุ่ย"</h2>
+            <h3>"ไม่สูงต้องเขย่ง ไม่เก่งต้องขยัน"</h3>
+            <br>
+            <h3>ข้อมูลส่วนต้ว</h3>
+            <ul>
+                <li><a  href="profile.html">โปรไฟล์</a></li>
+                <li><a  href="firends.html">เพื่อน</a></li>
+            </ul>
+        </section>
+
     </div>
 </body>
+
 </html>
