@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 380px;
+        }
+        label sup {
+            color: orangered;
+        }
+
+        .rows {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .col-1 {
+            width: 150px;
+        }
+        .col-2 {
+            width: 300px;
+        }
+        .col-3 {
+            width: 450px;
+        }
+        .form-group{
+            float: left;
+        }
+        .splice{
+            height: 40px;
+            background-color: silver;
+        }
+        .select-style{
+            width: 165px;
+        }
+        .help{
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <from>
+        <fieldset>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="name">Name<sup>*</sup>:</label>
+                </div>
+                <div class="form-group col-3">
+                    <input id="name" name="name">
+                    <input class="help" type="button" value="?" >
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="tabtext">Tab Text<sup>*</sup>:</label>
+                </div>
+                <div class="form-group col-3">
+                    <input id="tabtext" name="tabtext">
+                    <input class="help" type="button" value="?" >
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="url">URL<sup>*</sup>:</label>
+                </div>
+                <div class="form-group col-3">
+                    <span>http://www.wizehive.com/webform/</span>
+                    <input id="url" name="url">
+                </div>
+            </div>
+            <div class="splice">
+                <hr>
+                FORM SETUP
+            </div>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="form">Form:</label>
+                </div>
+                <div class="form-group col-3">
+                    <select class="select-style" id="form" name="form">
+                            <option value="1">one</option>
+                            <option value="2">two</option>
+                            <option value="3">tree</option>
+                    </select>
+                    <input type="button" value="Edit">
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="logo">Logo:</label>
+                </div>
+                <div class="form-group col-3">
+                    <span>no logo uploaded</span>
+                    <input type="file" id="logo" name="logo" value="Upload logo" >
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="tmptxt">Template Text:</label>
+                </div>
+                <div class="form-group col-3">
+                    <select class="select-style" id="tmptxt" name="tmptxt">
+                            <option value="Eng">English</option>
+                            <option value="Thai">Thailand</option>
+                    </select>
+                    <input type="button" value="Edit">
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="refr">Review Form:</label>
+                </div>
+                <div class="form-group col-3">
+                    <select class="select-style" id="refr" name="refr">
+                        <option value="Def">Default</option>
+                            <option value="Eng">English</option>
+                            <option value="Thai">Thailand</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="resc">Review Score:</label>
+                </div>
+                <div class="form-group col-3">
+                    <select class="select-style" id="resc" name="resc">
+                            <option value="Rat">Rating</option>
+                    </select>
+                    <input type="button" value="Reload Fields">
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="scty">Scoring Type:</label>
+                </div>
+                <div class="form-group col-3">
+                    <select  id="scty" name="scty">
+                            <option value="Aver">Average</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-1">
+                    <label for="maxscor">Max Score:</label>
+                </div>
+                <div class="form-group col-3">
+                   <input id="maxscor" name="maxscor">
+                </div>
+            </div>
+        </fieldset>
+    </from>
+</body>
+
+</html>
