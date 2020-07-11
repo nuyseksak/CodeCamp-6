@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        fieldset {
+            width: 300px;
+        }
+
+        .form-contols label::after {
+            content: "\a";
+            white-space: pre;
+        }
+
+        button {
+            background-color: orange;
+        }
+
+
+        .form-contols {
+            float: left;
+        }
+
+        .rows {
+            clear: both;
+            display: flex;
+        }
+
+        .col {
+            display: block;
+            width: 150px;
+            margin: 10px;
+
+        }
+
+        .col input {
+            width: 100%;
+        }
+
+        .col select {
+            width: 100%;
+        }
+
+        .form-group label::after {
+            content: "\a";
+            white-space: pre-wrap;
+        }
+
+        .form-group {
+            float: left;
+            margin: 3px;
+        }
+
+        .form-group input {
+            width: 73px;
+        }
+
+        .form-group select {
+            width: 73px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <div class="rows ">
+                    <div class="col form-contols">
+                        <label for="fly">Flying from</label>
+                        <select id="fly">
+                            <option value="THA">Thailand</option>
+                        </select>
+                    </div>
+                    <div class="col form-contols">
+                        <label for="to">To</label>
+                        <select id="to">
+                            <option value="LAO">Lao</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="col form-contols">
+                        <label for="departing">Departing</label>
+                        <input id="Departing" type="date">
+                    </div>
+                    <div class="col form-contols">
+                        <label for="returning">Returning</label>
+                        <input id="Returning" type="date">
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="form-group">
+                        <label>Adult</label>
+                        <input type="number">
+                    </div>
+                    <div class="form-group">
+                        <label>Child</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Infant</label>
+                        <input type="number">
+                    </div>
+                    <div class="form-group">
+                        <label>Currency</label>
+                        <select id="to">
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div>
+                        <button type="submit">Search</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
