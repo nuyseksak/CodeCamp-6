@@ -72,45 +72,47 @@
                 <div class="rows ">
                     <div class="col form-contols">
                         <label for="fly">Flying from</label>
-                        <select id="fly">
+                        <select id="fly" name="fly">
                             <option value="THA">Thailand</option>
+                            <option value="LAO">Lao</option>
                         </select>
                     </div>
                     <div class="col form-contols">
                         <label for="to">To</label>
-                        <select id="to">
+                        <select id="to" name="to">
                             <option value="LAO">Lao</option>
+                            <option value="THA">Thailand</option>
                         </select>
                     </div>
                 </div>
                 <div class="rows">
                     <div class="col form-contols">
                         <label for="departing">Departing</label>
-                        <input id="Departing" type="date">
+                        <input id="departing" name="departing" type="date">
                     </div>
                     <div class="col form-contols">
                         <label for="returning">Returning</label>
-                        <input id="Returning" type="date">
+                        <input id="returning" name="returning" type="date">
                     </div>
                 </div>
 
                 <div class="rows">
                     <div class="form-group">
-                        <label>Adult</label>
-                        <input type="number">
+                        <label for="adult">Adult</label>
+                        <input id="adult" name="adult" type="number">
                     </div>
                     <div class="form-group">
-                        <label>Child</label>
-                        <input type="number">
+                        <label for="child">Child</label>
+                        <input id="child" name="child" type="number">
                     </div>
 
                     <div class="form-group">
-                        <label>Infant</label>
-                        <input type="number">
+                        <label id="infant">Infant</label>
+                        <input id="infant" name="infant" type="number">
                     </div>
                     <div class="form-group">
-                        <label style="color: orange;">Currency</label>
-                        <select id="to">
+                        <label style="color: orange;" id="currency">Currency</label>
+                        <select id="currency" name="currency">
                             <option value="USD">USD</option>
                         </select>
                     </div>
